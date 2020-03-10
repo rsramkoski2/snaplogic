@@ -1910,7 +1910,7 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "$phone.replace('+1 (','').replace(') ','-')"
+                                            "value": "$phone"
                                         },
                                         "targetPath": {
                                             "value": "$phone"
