@@ -3,21 +3,21 @@
     "class_version": 9,
     "link_map": {
         "link100": {
-            "dst_id": "11111111-1111-1111-1111-000000000001",
+            "dst_id": "11111111-1111-1111-1111-000000000000",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_id": "11111111-1111-1111-1111-000000000003",
             "src_view_id": "output0"
         },
         "link104": {
-            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_id": "11111111-1111-1111-1111-000000000002",
             "dst_view_id": "inputRows",
-            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_id": "11111111-1111-1111-1111-000000000001",
             "src_view_id": "output0"
         },
         "link107": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_id": "11111111-1111-1111-1111-000000000001",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
         }
     },
@@ -44,7 +44,7 @@
         },
         "input": {},
         "output": {
-            "11111111-1111-1111-1111-000000000003_output101": {
+            "11111111-1111-1111-1111-000000000002_output101": {
                 "label": {
                     "value": "SQL Server - Insert - output0"
                 },
@@ -65,7 +65,28 @@
                 "value": []
             },
             "param_table": {
-                "value": []
+                "value": [
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "is_qa"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "true"
+                        }
+                    }
+                ]
             },
             "suspendable": {
                 "value": false
@@ -77,7 +98,7 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
-                "grid_x_int": 3,
+                "grid_x_int": 6,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -85,11 +106,11 @@
                 "recommendation_id": null,
                 "rot_int": 0,
                 "rot_tail_int": 0,
-                "source": ""
+                "source": "snap catagory"
             },
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
-                "grid_x_int": 4,
+                "grid_x_int": 7,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -101,7 +122,7 @@
             },
             "11111111-1111-1111-1111-000000000002": {
                 "error": {},
-                "grid_x_int": 5,
+                "grid_x_int": 8,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -113,7 +134,7 @@
             },
             "11111111-1111-1111-1111-000000000003": {
                 "error": {},
-                "grid_x_int": 6,
+                "grid_x_int": 5,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -121,7 +142,7 @@
                 "recommendation_id": null,
                 "rot_int": 0,
                 "rot_tail_int": 0,
-                "source": "snap catagory"
+                "source": ""
             }
         },
         "pan_x_num": 0,
@@ -130,95 +151,9 @@
     },
     "snap_map": {
         "11111111-1111-1111-1111-000000000000": {
-            "class_id": "com-snaplogic-snaps-binary-simpleread",
-            "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000000",
-            "property_map": {
-                "account": {
-                    "account_ref": {
-                        "expression": false,
-                        "value": {
-                            "label": {
-                                "expression": false,
-                                "value": "SFTP_81"
-                            },
-                            "ref_class_id": {
-                                "value": "com-snaplogic-snaps-binary-binarybasicauthaccount"
-                            },
-                            "ref_id": {
-                                "expression": false,
-                                "value": null
-                            }
-                        }
-                    }
-                },
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "File Reader"
-                    },
-                    "notes": {
-                        "value": null
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    }
-                },
-                "settings": {
-                    "advancedProperties": {
-                        "value": []
-                    },
-                    "enableStaging": {
-                        "value": false
-                    },
-                    "executeDuringPreview": {
-                        "value": true
-                    },
-                    "execution_mode": {
-                        "value": "Validate & Execute"
-                    },
-                    "filePath": {
-                        "expression": false,
-                        "value": "sftp://192.237.214.80:22/upload/rsramkoski/demo_customers.csv"
-                    },
-                    "preventURLEncoding": {
-                        "value": false
-                    },
-                    "retries": {
-                        "expression": false,
-                        "value": 0
-                    },
-                    "retryInterval": {
-                        "expression": false,
-                        "value": 1
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000001": {
             "class_id": "com-snaplogic-snaps-transform-csvparser",
             "class_version": 3,
-            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "instance_id": "11111111-1111-1111-1111-000000000000",
             "property_map": {
                 "error": {
                     "error0": {
@@ -293,10 +228,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000002": {
+        "11111111-1111-1111-1111-000000000001": {
             "class_id": "com-snaplogic-snaps-transform-datatransform",
             "class_version": 4,
-            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "instance_id": "11111111-1111-1111-1111-000000000001",
             "property_map": {
                 "error": {
                     "error0": {
@@ -454,10 +389,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000003": {
+        "11111111-1111-1111-1111-000000000002": {
             "class_id": "com-snaplogic-snaps-sqlserver-insert",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "instance_id": "11111111-1111-1111-1111-000000000002",
             "property_map": {
                 "account": {
                     "account_ref": {
@@ -549,6 +484,93 @@
                     "tableName": {
                         "expression": false,
                         "value": "\"RSRAMKOSKI\".\"CUSTOMERS_FROM_SFTP\""
+                    }
+                },
+                "view_serial": 101
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-binary-simpleread",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "SFTP_81"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-binary-binarybasicauthaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "File Reader"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {},
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "advancedProperties": {
+                        "value": []
+                    },
+                    "enableStaging": {
+                        "value": false
+                    },
+                    "executeDuringPreview": {
+                        "value": true
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "filePath": {
+                        "expression": false,
+                        "value": "sftp://192.237.214.80:22/upload/rsramkoski/demo_customers.csv"
+                    },
+                    "preventURLEncoding": {
+                        "value": false
+                    },
+                    "retries": {
+                        "expression": false,
+                        "value": 0
+                    },
+                    "retryInterval": {
+                        "expression": false,
+                        "value": 1
                     }
                 },
                 "view_serial": 101
